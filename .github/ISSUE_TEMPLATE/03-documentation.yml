@@ -1,0 +1,21 @@
+---
+name: 📄 Documentation request
+description: Request for new documentation or updates to existing documentation (e.g., playbooks, roles, or project documentation).
+title: '📄 DOC - `Enter issue title`'
+labels: ['documentation']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > Remember that an Documentation request is used to propose new documentation or updates to existing documentation.
+        > This can include documents, playbooks, roles, or team project documentation that needs to be created or modified.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      placeholder: >
+        ❗❗❗ PLEASE REMOVE `` CHARACTERS FROM TITLE AND REPLACE WITH PROPER VALUES ❗❗❗
+
+        Provide a detailed description of the documentation request you are making.
+        Include any specific requirements, use cases, or examples that can help in understanding the documentation request better.

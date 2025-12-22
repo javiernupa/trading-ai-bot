@@ -1,0 +1,28 @@
+---
+name: 🐛 Bug report
+description: Report a bug or issue with the project (e.g., unexpected behavior, errors, or problems with existing playbooks or roles).
+title: '🐛 BUG - `Enter issue title`'
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > Remember that an Bug report is used to identify and document issues or defects in the project.
+        > This can include unexpected behavior, errors, or problems with existing playbooks or roles that need to be addressed.
+  - type: textarea
+    id: error
+    attributes:
+      label: "Error"
+      placeholder: "Explain the error/problem behind this bug request."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      placeholder: >
+        ❗❗❗ PLEASE REMOVE `` CHARACTERS FROM TITLE AND REPLACE WITH PROPER VALUES ❗❗❗
+
+        Provide a detailed description of the bug you encountered.
+        Include any error messages, steps to reproduce, and expected versus actual behavior.
