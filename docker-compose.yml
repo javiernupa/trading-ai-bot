@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  trading-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trading-bot
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    command: python examples/run_rsi.py
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: trading-db
+    environment:
+      POSTGRES_USER: trading
+      POSTGRES_PASSWORD: trading123
+      POSTGRES_DB: trading_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trading-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+volumes:
+  postgres_data:

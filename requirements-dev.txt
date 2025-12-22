@@ -1,0 +1,39 @@
+# Development Dependencies
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.1
+hypothesis>=6.82.0
+
+# Code Quality
+black>=23.7.0
+ruff>=0.0.280
+mypy>=1.4.1
+pre-commit>=3.3.3
+
+# Type stubs
+pandas-stubs>=2.0.2
+types-requests>=2.31.0
+
+# Documentation
+sphinx>=7.0.1
+sphinx-rtd-theme>=1.2.2
+sphinx-autodoc-typehints>=1.24.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.25.0
+notebook>=7.0.0
+
+# Debugging
+ipdb>=0.13.13
+pdbpp>=0.10.3
+
+# Performance profiling
+line-profiler>=4.0.3
+memory-profiler>=0.61.0
+
+# Utilities
+python-dotenv>=1.0.0
