@@ -1,0 +1,28 @@
+---
+name: ⚡ Feature request
+description: Request for a new feature to enhance this project (e.g., new playbook, new role, or extending existing playbooks or roles).
+title: '⚡ FEATURE - `Enter issue title`'
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > Remember that an Feature request is used to propose new functionalities or enhancements to existing features.
+        > This can include new playbooks, roles, modules, or extensions to current capabilities that improve the overall functionality of the project.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      placeholder: "Explain the motivation behind this  feature request."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      placeholder: >
+        ❗❗❗ PLEASE REMOVE `` CHARACTERS FROM TITLE AND REPLACE WITH PROPER VALUES ❗❗❗
+
+        Provide a detailed description of the feature you are requesting.
+        Include any specific requirements, use cases, or examples that can help in understanding the feature better.

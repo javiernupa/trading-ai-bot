@@ -1,0 +1,20 @@
+---
+name: ⚙️ Internal request
+description: Internal repo configuration (CI/CD, dependencies, lint rules, templates, etc.)
+title: '⚙️ Internal - `Enter issue title`'
+labels: ['internal']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > Remember that an Internal request is used to propose changes or improvements to the internal configuration of the repository.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      placeholder: >
+        ❗❗❗ PLEASE REMOVE `` CHARACTERS FROM TITLE AND REPLACE WITH PROPER VALUES ❗❗❗
+
+        Describe here the motivation of this change.
+        Include any specific requirements, use cases, or examples that can help in understanding the request better.

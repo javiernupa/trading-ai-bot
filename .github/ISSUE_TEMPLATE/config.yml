@@ -1,0 +1,17 @@
+---
+blank_issues_enabled: false
+
+contact_links:
+  - name: 🔒 Report a security vulnerability
+    url: /security/advisories/new
+    about: >
+      Please DO NOT open a public issue for security vulnerabilities.
+      Use this private reporting channel instead.
+
+  - name: 📖 Security policy
+    url: /security/policy
+    about: Read the security policy and disclosure process.
+
+  - name: 💬 General discussion / questions
+    url: /discussions
+    about: Ask questions or start a discussion (no bugs).
