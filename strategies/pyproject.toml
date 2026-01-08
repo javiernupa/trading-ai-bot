@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strategies"
+version = "0.1.0"
+description = "Paquete de estrategias (ejemplo minimal)"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.24",
+    "ta>=0.11.0",  # Technical analysis library
+]
