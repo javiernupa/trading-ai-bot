@@ -1,6 +1,7 @@
 """Trading Engine - Motor de backtesting y ejecución."""
 
 from .backtest import Backtester
+from .data import CsvDataProvider, DataLoader, DataValidator, YahooFinanceProvider
 from .metrics import MetricsCalculator
 from .models import (
     BacktestResult,
@@ -23,6 +24,10 @@ __all__ = [
     "Portfolio",
     "MetricsCalculator",
     "BacktestVisualizer",
+    "DataLoader",
+    "DataValidator",
+    "YahooFinanceProvider",
+    "CsvDataProvider",
     "BacktestResult",
     "Order",
     "OrderSide",
